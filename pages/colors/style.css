@@ -1,0 +1,32 @@
+---
+permalink: /colors/style.css
+---
+
+.dashboard-overview .status,
+.dashboard-overview .status-description {
+  color: #000 !important;
+}
+
+.dashboard-overview .status {
+  background-color: transparent;
+  margin: -20px -20px 20px -20px;
+  display: block;
+}
+
+.dashboard-overview li {
+  height: auto;
+  border-top: 1em solid white;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.dashboard-overview .project-count {
+  font-size: 50%;
+  color: #000 !important;
+  margin-bottom: 0;
+}
+
+select#scheme {
+  display: inline;
+  margin: 0 0 0 .5em;
+}

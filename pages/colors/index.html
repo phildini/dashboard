@@ -1,0 +1,43 @@
+---
+layout: bare
+title: "Status Colors"
+permalink: /colors/
+stages:
+  - status: discovery
+    description: "User needs are researched and identified."
+    projects: 3
+  - status: alpha
+    description: "A prototype is built to meet the main user needs."
+    projects: 5
+  - status: beta
+    description: "The service is improved, then tested in public."
+    projects: 3
+  - status: live
+    description: "The service is public and works well."
+    projects: 1
+---
+
+<section class="dashboard">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+  <style scoped>
+    @import url(style.css);
+  </style>
+
+  <h1>{{page.title}}</h1>
+  <p class="lead">Select a <a href="http://colorbrewer2.org">ColorBrewer</a> color scheme: <select id="scheme"></select></p>
+  <ul class="dashboard-overview">
+    {% for stage in page.stages %}
+    <li class="{{ stage.status }}">
+      <a href="?status={{ stage.status }}">
+        <span class="status {{ stage.status }}">{{ stage.status }}</span>
+        <p class="status-description">{{ stage.description }}</p>
+        <p class="project-count"><b>{{ stage.projects }}</b>
+        project{% if stage.projects > 1 || stage.projects < 1 %}s{% else %}{% endif %}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<script src="color.js"></script>
