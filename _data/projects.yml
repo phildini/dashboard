@@ -348,7 +348,7 @@
   contact:
   - 18f/answers/issues
   stack: "Rails, Vagrant/Chef, JavaScript"
-  team: yuda, ben, nienhuis, jen, justin, amos, sasha, nick, lindsay
+  team: yuda, alan, amos, jen, justin, leah, nick, sasha
   licenses:
   links:
   status: Hold
