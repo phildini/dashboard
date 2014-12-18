@@ -21,12 +21,12 @@
 
 .stage-bug {
 	display: block;
-  background: #f3f3f3;
-  color: #333;
-  border: 1px solid #d9d9d9;
-  border-top: none;
-  text-align: center;
-  padding: .5em 0;
+	background: #f3f3f3;
+	color: #333;
+	border: 1px solid #d9d9d9;
+	border-top: none;
+	text-align: center;
+	padding: .5em 0;
 }
 
 // Extends
@@ -752,11 +752,11 @@
 .status {
 	padding: 5px 10px 5px 10px;
 	margin-top: -5px;
-	color: white;
+	color: black;
 	font-size: .7em;
 	font-family: $base-font-family;
 	display: inline-block;
-	background-color: $medium-gray;
+	// background-color: $medium-gray;
 	font-weight: 600;
 	float: right;
 	@include media($smallest) {
@@ -765,19 +765,19 @@
 }
 
 .discovery {
-	background-color: $medium-gray;
+	background-color: $status-discovery;
 }
 
 .alpha {
-	background-color: $medium-blue;	
+	background-color: $status-alpha;
 }
 
 .beta {
-	background-color: $green;
+	background-color: $status-beta;
 }
 
 .live {
-	background-color: $red;
+	background-color: $status-live;
 }
 
 .dashboard-overview {
@@ -791,6 +791,7 @@
 .dashboard-overview,
 .dashboard-overview-numbers {
 	text-align: center;
+	color: black;
 	a {
 		text-decoration: none;
 		color: $dark-gray;
@@ -806,7 +807,7 @@
 		padding: 10px;
 		margin-right: 1.75% !important;
 		.status-description {
-			color: white;
+			color: black;
 			line-height: 1.1em;
 			font-size: 0.47em;
 		}
