@@ -1020,6 +1020,15 @@
 	}
 }
 
+.dashboard-issue-tracker {
+	@include span-columns(9 of 9);
+
+	.civic-issue-tracker {
+		border-top: 1px solid $medium-gray;
+		border-bottom: 1px solid $medium-gray;
+	}
+}
+
 // 404
 //********************************************************
 .fours {
